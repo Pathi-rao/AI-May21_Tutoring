@@ -1,0 +1,32 @@
+
+******************** Rough Guide to install CUDA on your device (works only with PyTorch) ********************
+
+Step1: Go to this link "https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10" 
+	and select your OS along with the installer type (local is recommended).
+
+Step2: The downloaded file will be an executable. Run it and it will unpack all the files into your drive.
+
+Step3: Go to "https://pytorch.org/get-started/locally/" and select the OS and dependencies and select PIP(recommended) and copy the command into your virtual environment.
+
+
+
+	. Command to create a virtual env - " python -m venv *env_name* "
+	. To activate it - " *env_name*\Scripts\activate.bat "
+
+
+Step4: Once its done, select the virtual environment and run the following command in a file, 
+
+	"	
+		import torch
+
+		print("Torch using cuda: ", torch.cuda.is_available())
+	"
+
+If it returns True, then its successfull.
+
+
+
+
+++++++++++++++++++ With Tensorflow ++++++++++++++++++ 
+
+*In Progress...*
