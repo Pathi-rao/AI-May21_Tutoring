@@ -1,0 +1,1 @@
+# Script for finding the mean and std of your custom dataset for normalizing.
